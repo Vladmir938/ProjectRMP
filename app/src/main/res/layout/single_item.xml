@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="12dp"
+    android:id="@+id/rentCard"
+    android:backgroundTint="#2948A3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rentImg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rentName"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/rentPrice"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
+                android:layout_width="match_parent"
+                android:drawablePadding="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/rentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
+                android:textColor="#FFFFFF"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
